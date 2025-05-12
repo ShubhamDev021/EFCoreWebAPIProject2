@@ -8,5 +8,7 @@
         public int NumberOfPages { get; set; }
         public bool IsActive { get; set; }
         public DateTime CreatedOn { get; set; }
+
+        public Language Language { get; set; }
     }
 }
