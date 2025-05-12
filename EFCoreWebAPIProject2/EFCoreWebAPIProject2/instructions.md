@@ -17,7 +17,15 @@
 ```bash
 Add-Migration InitDb
 ```
+or
+```bash
+dotnet ef migrations add InitDb
+```
 - Till now we have just created the migrations but not applied them yet. So, next we have to apply migration as
 ```bash
 Update-Database
+```
+or
+```bash
+dotnet ef database update
 ```
