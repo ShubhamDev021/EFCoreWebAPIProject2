@@ -39,9 +39,6 @@ namespace EFCoreWebAPIProject2.Migrations
                     b.Property<int>("Column3")
                         .HasColumnType("int");
 
-                    b.Property<int>("Column4")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("CreatedOn")
                         .HasColumnType("datetime2");
 
@@ -64,7 +61,7 @@ namespace EFCoreWebAPIProject2.Migrations
 
                     b.HasIndex("LanguageId");
 
-                    b.ToTable("Books");
+                    b.ToTable("Books", (string)null);
                 });
 
             modelBuilder.Entity("EFCoreWebAPIProject2.Data.Language", b =>
@@ -82,7 +79,7 @@ namespace EFCoreWebAPIProject2.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Languages");
+                    b.ToTable("Languages", (string)null);
                 });
 
             modelBuilder.Entity("EFCoreWebAPIProject2.Data.Book", b =>
